@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% auto 10%;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+}
+header {
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  grid-area: header;
+  background-color: #9a8c98;
+}
+
+header img {
+  border-radius: 100%;
+  padding: 0.5rem 2rem;
+}
+header h1 {
+  place-self: center center;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 50px;
+  color: whitesmoke;
+}
+
+.topnav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 15px;
+  place-self: center end;
+  color: #4a4e69;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 20px;
+  color: #4a4e69;
+}
+a:hover {
+  background-color: #f2e9e4;
+}
+
+input {
+  background-color: #f2e9e4;
+  border: solid 2px #4a4e69;
+  width: 150px;
+  height: 30px;
+}
+aside {
+  grid-area: aside;
+  background-color: #f2e9e4df;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  padding: 30px;
+}
+h3 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  color: #4a4e69;
+}
+main {
+  grid-area: main;
+  background-color: #f2e9e4df;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 30px;
+}
+.producto {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.nombreproducto {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #4a4e69;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.precio {
+  font-family: "Barlow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 15px;
+  color: #4a4e69;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.comprar {
+  background-color: #4a4e69;
+  padding: 20px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #9a8c98;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+}
+.iconos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 20px;
+  place-self: start;
+  color: whitesmoke;
+  padding: 20px;
+}
+.name {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+  color: whitesmoke;
+  text-align: center;
+  align-self: center;
+}
+.webpay {
+  justify-self: flex-end;
+  padding: 15px;
+  border-radius: 30px;
+}
